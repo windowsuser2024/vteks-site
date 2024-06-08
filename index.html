@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crafting Beautiful & Functional Websites - vteks.org</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="./images/ico.png" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a href="#intro" class="smoothscroll">Home</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#services" class="smoothscroll">Services</a></li>
+                        <li><a href="#folio" class="smoothscroll">Work</a></li>
+                        <li><a href="#footer" class="smoothscroll">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <ul class="s-header__social">
+                        <li>
+                            <a href="https://www.facebook.com/vteks.org.company.site" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/junioritech619?igsh=YzljYTk1ODg3Zg==" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/message/H5NNVYWL6NWVK1" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>
+                                <span class="u-screen-reader-text">Whatsapp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/vteksorg?t=5xnJW3-o-StlDR6bRQ2gaA&s=09" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                                <span class="u-screen-reader-text">Twitter</span>
+                            </a>
+                        </li>
+                    </ul> <!-- s-header__social -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+            <!-- intro
+            ----------------------------------------------- -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="s-intro__bg"></div>
+
+                <div class="row s-intro__content">
+
+                    <div class="s-intro__content-bg"></div>
+
+                    <div class="column lg-12 s-intro__content-inner">
+                        
+                        <h1 class="s-intro__content-title">
+                        We provide creative <br>
+                        solutions to turn your <br>
+                        ideas into digital reality.
+                        </h1>
+
+                        <div class="s-intro__content-buttons">
+                            <a href="#about" class="btn btn--stroke s-intro__content-btn smoothscroll">More About Us</a>
+                            <a href="https://vimeo.com/955011497?share=copy" class="s-intro__content-video-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M7 6v12l10-6z"></path></svg>
+                            </a>
+                        </div>
+                        
+                    </div> <!-- s-intro__content-inner -->
+
+                </div> <!-- s-intro__content -->
+
+                <div class="s-intro__scroll-down">
+                    <a href="#about" class="smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div> <!-- s-intro__scroll-down -->
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- about
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row section-header" data-num="01">
+                    <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                       Vteks is a passionate web design company dedicated to transforming your ideas into impactful online experiences.
+                        </h2>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                        We're a team of skilled designers and developers who believe that beautiful websites should also be strategic and functional.We don't just build websites, we build partnerships. We take the time to understand your vision, target audience, and business goals.
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">
+    
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Define</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            This initial phase involves understanding your business goals, target audience, and brand identity. Vteks will likely conduct user research, analyze competitor websites, and define the project's scope and functionalities.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Design</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            Here, creativity takes flight! Vteks will brainstorm ideas, develop wireframes and mockups to visualize the website's layout and user flow. Interactive prototypes might be created to test usability with real users and gather feedback for refinement.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Build</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            Based on approved designs and user feedback, Vteks' skilled developers will bring the website to life. This stage involves coding, integrating content management systems (like Html,Css,Js,React), and ensuring the website functions flawlessly across different devices.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <h3 class="h5">Launch</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                           It's go-time! Vteks will launch your website and provide ongoing maintenance and support. They might also track website analytics and user behavior data to identify areas for further optimization and ensure your website continues to meet your business goals.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                </div> <!-- end process-list -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- services
+            ----------------------------------------------- -->
+            <section id="services" class="s-services target-section">
+
+                <div class="row section-header" data-num="02">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">What We Do</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                            Transforming ideas into impactful websites through design & development.
+                        </h2>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                        Vteks can help your website not only look great but also achieve your business goals, whether it's increased brand awareness, lead generation, or higher sales.
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div class="row services-list list-block block-lg-one-half block-tab-whole">
+    
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V7h6v12H4zm8 0V7h8V5l.002 14H12z"></path><path d="M6 10h2v2H6zm0 4h2v2H6z"></path></svg>
+                            </div>
+                            <h3 class="h5">Frontend Web Development</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                           Our frontend development expertise takes stunning website designs and turns them into user-friendly interfaces. We focus on smooth navigation, clear calls to action, and a visually appealing experience that keeps visitors engaged.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path></svg>
+                            </div>
+                            <h3 class="h5">Backend Web Development</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            Strong backend development is essential for a website's functionality, security, and scalability. Vteks' backend expertise ensures your website can handle complex tasks, grow with your business, and keep your data safe.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm7.931 9h-2.764a14.67 14.67 0 0 0-1.792-6.243A8.013 8.013 0 0 1 19.931 11zM12.53 4.027c1.035 1.364 2.427 3.78 2.627 6.973H9.03c.139-2.596.994-5.028 2.451-6.974.172-.01.344-.026.519-.026.179 0 .354.016.53.027zm-3.842.7C7.704 6.618 7.136 8.762 7.03 11H4.069a8.013 8.013 0 0 1 4.619-6.273zM4.069 13h2.974c.136 2.379.665 4.478 1.556 6.23A8.01 8.01 0 0 1 4.069 13zm7.381 6.973C10.049 18.275 9.222 15.896 9.041 13h6.113c-.208 2.773-1.117 5.196-2.603 6.972-.182.012-.364.028-.551.028-.186 0-.367-.016-.55-.027zm4.011-.772c.955-1.794 1.538-3.901 1.691-6.201h2.778a8.005 8.005 0 0 1-4.469 6.201z"></path></svg>
+                            </div>
+                            <h3 class="h5">Website Hosting</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            By storing your website on a web hosting server, it becomes accessible to anyone with an internet connection and the website's address (domain name).
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z"></path></svg>
+                            </div>
+                            <h3 class="h5">E-Commerce</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            Just like in a physical store, your e-commerce website showcases your products with high-quality images, descriptions, and specifications.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h4l-1.8 2.4 1.6 1.2 2.7-3.6h3l2.7 3.6 1.6-1.2L16 18h4c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 13h4v2H5v-2z"></path></svg>
+                            </div>
+                            <h3 class="h5">Brand Design</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            Brand design is all about creating that visual identity that represents your company's essence and resonates with your target audience. 
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 3H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h7v3H8v2h8v-2h-3v-3h7c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM10 13V7l5 3-5 3z"></path></svg>
+                            </div>
+                            <h3 class="h5">Brand Ads</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                            Brand ads are about creating a positive and lasting impression with your target audience, just like you would when meeting a new friend.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                </div> <!-- end process-list -->
+
+            </section> <!-- end s-services -->
+
+
+            <!-- portfolio
+            ----------------------------------------------- -->
+            <section id="folio" class="s-folio target-section">
+
+                <div class="row section-header light-on-dark" data-num="03">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">Recent Works</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                            Here are some of our favorite projects we have done lately. Feel free to check them out.
+                        </h2>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                        Vteks can help your website not only look great but also achieve your business goals, whether it's increased brand awareness, lead generation, or higher sales.
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div id="bricks" class="row bricks">
+                    <div class="column lg-12 masonry">
+                        <div class="bricks-wrapper">
+
+                            <div class="grid-sizer"></div>
+
+                            <article class="brick brick--double entry">
+                                <a href="#modal-01" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="./images/folio/folio-1.png" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Frontend Design</div>
+                                        <h4 class="entry__title">Sneaker</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick brick--double entry">
+                                <a href="#modal-02" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="./images/folio/folio-2.png" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Frontend Design</div>
+                                        <h4 class="entry__title">Brand Design</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-03" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="./images/folio/1.png" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Frontend Design</div>
+                                        <h4 class="entry__title">Responsive</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-04" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="./images/folio/4.png" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Frontend Design</div>
+                                        <h4 class="entry__title">All Mobile</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-05" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="./images/folio/2.png" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Frontend Design</div>
+                                        <h4 class="entry__title">IPad Responsive</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-06" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="./images/folio/3.png" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">FrontEnd Design</div>
+                                        <h4 class="entry__title">Mobile Responsive</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                        </div> <!-- end bricks-wrapper -->
+                    </div> <!-- end masonry -->
+                </div> <!-- end bricks -->
+
+
+                <!-- modal templates popup
+                -------------------------------------------- -->
+                <div id="modal-01" hidden>
+                    <div class="modal-popup">
+                        <img src="./images/folio/folio-1.png" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Frontend Design</h5>
+                            <p>Sneaker is a website by vteks that showcases Products in the best light and provides a smooth experience for customers is a test project.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Sneaker</li>
+                                <li>Frontend Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://adidas-website.vercel.app/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-02" hidden>
+                    <div class="modal-popup">
+                        <img src="./images/folio/folio-2.png" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Frontend Website</h5>
+                            <p>A strong brand identity on your website can help you attract new customers, build loyalty, and ultimately achieve your business goals.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Brand Identity</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://vteks-site.vercel.app/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-03" hidden>
+                    <div class="modal-popup">
+                        <img src="./images/folio/1.png" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Frontend Design</h5>
+                            <p>Whether it's a desktop computer, a tablet, or a smartphone, your website will look great and function flawlessly.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://adidas-website.vercel.app/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-04" hidden>
+                    <div class="modal-popup">
+                        <img src="./images/folio/4.png" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Frontend Design</h5>
+                            <p>Whether it's a desktop computer, a tablet, or a smartphone, your website will look great and function flawlessly.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://adidas-website.vercel.app/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-05" hidden>
+                    <div class="modal-popup">
+
+                        <img src="./images/folio/2.png" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Brand Design</h5>
+                            <p>The way the website's interface is designed, including layout, navigation, and button styles, also plays a part in brand design. A well-designed UI should be user-friendly and visually consistent with the overall brand identity.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Brand Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://vteks-site.vercel.app/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> <!-- end modal -->
+
+                <div id="modal-06" hidden>
+                    <div class="modal-popup">
+                        <img src="./images/folio/3.png" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Brand Design</h5>
+                            <p>A well-designed UI should be user-friendly and visually consistent with the overall brand identity.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Frontend Design</li>
+                                <li>Brand Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://vteks-site.vercel.app/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> <!-- end modal -->
+
+
+                <!-- clients
+                -------------------------------------------- -->
+                <div class="s-clients row">
+                    <div class="column lg-12">
+
+                        <div class="row section-header">
+                            <div class="column lg-12">
+                                <h3 class="title text-display-1">Popular languages we work with</h3>
+                            </div>
+                        </div> <!-- end section-header -->
+    
+                        <div class="row clients-list block-lg-one-fourth block-md-one-third block-tab-one-half block-stack">
+    
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z"></path></svg>
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 21.985c-.275 0-.532-.074-.772-.202l-2.439-1.448c-.365-.203-.182-.277-.072-.314.496-.165.588-.201 1.101-.493.056-.037.129-.02.185.017l1.87 1.12c.074.036.166.036.221 0l7.319-4.237c.074-.036.11-.11.11-.202V7.768c0-.091-.036-.165-.11-.201l-7.319-4.219c-.073-.037-.165-.037-.221 0L4.552 7.566c-.073.036-.11.129-.11.201v8.457c0 .073.037.166.11.202l2 1.157c1.082.548 1.762-.095 1.762-.735V8.502c0-.11.091-.221.22-.221h.936c.108 0 .22.092.22.221v8.347c0 1.449-.788 2.294-2.164 2.294-.422 0-.752 0-1.688-.46l-1.925-1.099a1.55 1.55 0 0 1-.771-1.34V7.786c0-.55.293-1.064.771-1.339l7.316-4.237a1.637 1.637 0 0 1 1.544 0l7.317 4.237c.479.274.771.789.771 1.339v8.458c0 .549-.293 1.063-.771 1.34l-7.317 4.236c-.241.11-.516.165-.773.165zm2.256-5.816c-3.21 0-3.87-1.468-3.87-2.714 0-.11.092-.221.22-.221h.954c.11 0 .201.073.201.184.147.971.568 1.449 2.514 1.449 1.54 0 2.202-.35 2.202-1.175 0-.477-.185-.825-2.587-1.063-1.999-.2-3.246-.643-3.246-2.238 0-1.485 1.247-2.366 3.339-2.366 2.347 0 3.503.809 3.649 2.568a.297.297 0 0 1-.056.165c-.037.036-.091.073-.146.073h-.953a.212.212 0 0 1-.202-.164c-.221-1.012-.789-1.34-2.292-1.34-1.689 0-1.891.587-1.891 1.027 0 .531.237.696 2.514.99 2.256.293 3.32.715 3.32 2.294-.02 1.615-1.339 2.531-3.67 2.531z"></path></svg>
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="m12 12.765 5.592-9.437h-3.276L12 7.33v.002L9.688 3.328h-3.28z"></path><path d="M18.461 3.332 12 14.235 5.539 3.332H1.992L12 20.672l10.008-17.34z"></path></svg>
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"></path></svg>
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M2.15 16.78h1.57a.14.14 0 0 0 .14-.12l.35-1.82h1.22a4.88 4.88 0 0 0 1.51-.2A2.79 2.79 0 0 0 8 14a3.18 3.18 0 0 0 .67-.85 3.43 3.43 0 0 0 .36-1 2.43 2.43 0 0 0-.41-2.16 2.64 2.64 0 0 0-2.09-.78h-3a.16.16 0 0 0-.15.13L2 16.6a.19.19 0 0 0 0 .13.17.17 0 0 0 .15.05zM5 10.62h1a1.45 1.45 0 0 1 1.08.29c.17.18.2.52.11 1a1.81 1.81 0 0 1-.57 1.12 2.17 2.17 0 0 1-1.33.33h-.8zm9.8-.95a2.7 2.7 0 0 0-1.88-.51h-1.19l.33-1.76a.15.15 0 0 0 0-.13.16.16 0 0 0-.11 0h-1.57a.14.14 0 0 0-.14.12l-1.38 7.27a.13.13 0 0 0 0 .12.13.13 0 0 0 .11.06h1.54a.14.14 0 0 0 .14-.13l.77-4.07h1.11c.45 0 .61.1.66.16a.81.81 0 0 1 0 .62l-.61 3.24a.13.13 0 0 0 0 .12.14.14 0 0 0 .11.06h1.56a.16.16 0 0 0 .15-.13l.64-3.4a1.7 1.7 0 0 0-.24-1.64zm4.52-.51h-3.13a.14.14 0 0 0-.15.13l-1.46 7.31a.16.16 0 0 0 0 .13.14.14 0 0 0 .11.05h1.63a.14.14 0 0 0 .15-.12l.37-1.82h1.27a5.28 5.28 0 0 0 1.56-.2 3 3 0 0 0 1.18-.64 3.31 3.31 0 0 0 .7-.85 3.45 3.45 0 0 0 .37-1 2.38 2.38 0 0 0-.42-2.16 2.81 2.81 0 0 0-2.18-.83zm.62 2.77a1.83 1.83 0 0 1-.6 1.12 2.28 2.28 0 0 1-1.37.33h-.8l.54-2.76h1a1.6 1.6 0 0 1 1.13.29c.16.18.16.52.1 1.02z"></path></svg>
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M13.74 4.23c-.84-1-1.57-2-1.71-2.22H12c-.14.21-.87 1.22-1.71 2.22-7.2 9.19 1.14 15.39 1.14 15.39l.07.05c.06.95.22 2.33.22 2.33h.62s.15-1.37.21-2.33l.07-.06s8.32-6.19 1.12-15.38zM12 19.48a3.48 3.48 0 0 1-.48-.48L12 9l.45 10a3.57 3.57 0 0 1-.45.48z"></path></svg>
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M18.75 11.35a4.32 4.32 0 0 1-.79-.08 3.9 3.9 0 0 1-.73-.23l-.17-.04h-.12q-.15 0-.15.21v.33a.43.43 0 0 0 0 .19.5.5 0 0 0 .21.19 3 3 0 0 0 .76.26 4.38 4.38 0 0 0 1 .12 3 3 0 0 0 1-.14 1.94 1.94 0 0 0 .73-.37 1.81 1.81 0 0 0 .49-.58 1.79 1.79 0 0 0 .17-.78 1.54 1.54 0 0 0-.3-.93 2.15 2.15 0 0 0-1-.64l-.95-.3a2 2 0 0 1-.73-.36.65.65 0 0 1-.2-.47.66.66 0 0 1 .31-.6 1.82 1.82 0 0 1 .89-.18 2.89 2.89 0 0 1 1.27.26.79.79 0 0 0 .26.08c.1 0 .15-.08.15-.22v-.36a.38.38 0 0 0-.06-.22.56.56 0 0 0-.2-.16 1.55 1.55 0 0 0-.28-.12 3.44 3.44 0 0 0-.38-.11l-.44-.1A3.4 3.4 0 0 0 19 6a2.82 2.82 0 0 0-.83.11 2.19 2.19 0 0 0-.7.35A1.61 1.61 0 0 0 17 7a1.5 1.5 0 0 0-.18.74 1.6 1.6 0 0 0 .33 1 2.08 2.08 0 0 0 1.06.68l1 .3a1.58 1.58 0 0 1 .67.34.66.66 0 0 1 .18.47.72.72 0 0 1-.35.63 1.83 1.83 0 0 1-.96.19zM12.94 6.5a.48.48 0 0 0-.13-.26.37.37 0 0 0-.26-.07H12a.43.43 0 0 0-.26.07.42.42 0 0 0-.13.26l-1 4.4-1.14-4.4a.48.48 0 0 0-.14-.26s-.13-.07-.26-.07h-.65c-.11 0-.16.06-.16.17a1.22 1.22 0 0 0 .06.27l1.56 5.14A.61.61 0 0 0 10 12a.45.45 0 0 0 .26.06h.57a.49.49 0 0 0 .27-.06.57.57 0 0 0 .12-.27l1-4.28 1 4.29a.42.42 0 0 0 .12.26.4.4 0 0 0 .27.07h.57a.41.41 0 0 0 .25-.07.44.44 0 0 0 .14-.26l1.61-5.14a.73.73 0 0 0 0-.16.52.52 0 0 0 0-.11.15.15 0 0 0-.17-.17h-.62a.45.45 0 0 0-.26.07.68.68 0 0 0-.13.26L14 11zM5.77 8.63a5.92 5.92 0 0 0-.71-.05 2.42 2.42 0 0 0-1.63.52 1.72 1.72 0 0 0-.6 1.37 1.7 1.7 0 0 0 .49 1.28 1.82 1.82 0 0 0 1.33.48 2.48 2.48 0 0 0 2-.92 3.5 3.5 0 0 0 .2.39 2.34 2.34 0 0 0 .24.31.26.26 0 0 0 .37 0l.42-.28a.28.28 0 0 0 .13-.2.27.27 0 0 0 0-.16 3.63 3.63 0 0 1-.21-.47 2 2 0 0 1-.07-.6V8.19a2.2 2.2 0 0 0-.55-1.64A2.42 2.42 0 0 0 5.33 6a3.9 3.9 0 0 0-1 .13 3.9 3.9 0 0 0-.84.3.47.47 0 0 0-.18.14.37.37 0 0 0 0 .23v.33c0 .14 0 .2.14.2a.26.26 0 0 0 .11 0l.23-.08A4.32 4.32 0 0 1 4.42 7a3 3 0 0 1 .72-.09 1.5 1.5 0 0 1 1.08.31 1.46 1.46 0 0 1 .31 1.06v.49zm.78.9v.27a2.36 2.36 0 0 1-.07.58 1.06 1.06 0 0 1-.23.43 1.38 1.38 0 0 1-.63.42 2.12 2.12 0 0 1-.68.12.94.94 0 0 1-.7-.24.92.92 0 0 1-.24-.71.92.92 0 0 1 .33-.76 1.52 1.52 0 0 1 1-.27h.62a5.67 5.67 0 0 1 .6.16zM19.76 15a19.68 19.68 0 0 1-7.55 1.54 20 20 0 0 1-9.9-2.62c-.24-.15-.43.1-.22.29A14.68 14.68 0 0 0 12 18a14.4 14.4 0 0 0 8.1-2.47c.34-.31.03-.72-.34-.53z"></path><path d="M18.38 14.06c-.19.14-.16.33.05.3.71-.09 2.28-.27 2.56.09s-.31 1.83-.58 2.49c-.08.2.1.28.28.13a3.9 3.9 0 0 0 1.23-3.34 3.94 3.94 0 0 0-3.54.33z"></path></svg>
+                                </a>
+                            </div>
+
+                        </div> <!-- clients-list -->
+                    </div> <!-- end column lg-12 -->
+                </div> <!-- end s-clients -->
+
+            </section> <!-- end s-folio -->
+
+
+            <!-- testimonials
+            ----------------------------------------------- -->
+            <section id="testimonials" class="s-testimonials">
+
+                <div class="row s-testimonials__content">
+                    <div class="column lg-12">
+        
+                        <div class="swiper-container s-testimonials__slider">
+        
+                            <div class="swiper-wrapper">
+    
+                                <div class="s-testimonials__slide swiper-slide">
+                                    <div class="s-testimonials__author">
+                                        <img src="images/avatars/user-02.jpg" alt="Author image" class="s-testimonials__avatar">
+                                        <cite class="s-testimonials__cite">
+                                            <strong>John Rockefeller</strong>
+                                            <span>Standard Oil Co.</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    My previous website was clunky and difficult to navigate.  I knew I needed a website that was user-friendly and showcased my services effectively.  Vteks designed a website that is not only beautiful but also incredibly user-friendly.  Now, potential clients can easily find the information they need and contact me for consultations.  My business has grown significantly thanks to Vteks!
+                                    </p>
+                                </div> <!-- end s-testimonials__slide -->
+                
+                                <div class="s-testimonials__slide swiper-slide">
+                                    <div class="s-testimonials__author">
+                                        <img src="images/avatars/user-08.jpg" alt="Author image" class="s-testimonials__avatar">
+                                        <cite class="s-testimonials__cite">
+                                            <strong>Maria Garcia</strong>
+                                            <span>Freelance Web Developer</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    We needed a reliable web development partner who could understand our vision and bring it to life.  Vteks exceeded our expectations.  Their team is not only talented but also incredibly communicative and professional.  They kept us informed throughout the entire process and delivered a website that is exactly what we envisioned.  We highly recommend Vteks to any business looking for a top-notch web development team.
+                                    </p>
+                                </div> <!-- end s-testimonials__slide -->
+                
+                                <div class="s-testimonials__slide swiper-slide">
+                                    <div class="s-testimonials__author">
+                                        <img src="images/avatars/user-01.jpg" alt="Author image" class="s-testimonials__avatar">
+                                        <cite class="s-testimonials__cite">
+                                            <strong>John Morgan</strong>
+                                            <span>Blooming Home Decor</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    I was struggling to get my online store off the ground.  My website looked outdated, and I wasn't sure how to reach my target audience effectively.  Then I found Vteks.  They completely transformed my website with a sleek, modern design and helped me develop a clear marketing strategy.  Sales have skyrocketed since then, and I'm so grateful for their expertise!
+                                    </p>
+                                </div> <!-- end s-testimonials__slide -->
+        
+                                <div class="s-testimonials__slide swiper-slide">
+                                    <div class="s-testimonials__author">
+                                        <img src="images/avatars/user-06.jpg" alt="Author image" class="s-testimonials__avatar">
+                                        <cite class="s-testimonials__cite">
+                                            <strong>David Lee</strong>
+                                            <span>Technovation Inc.</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    My company brand felt tired and didn't reflect our innovative spirit.  Vteks completely revamped our brand identity, from a new logo and color scheme to a website that truly captures our essence.  They even helped us develop a brand voice that resonates with our target audience.  Now, we feel confident and empowered to take our business to the next level.
+                                    </p>
+                                </div> <!-- end s-testimonials__slide -->
+            
+                            </div> <!-- end swiper-wrapper -->
+        
+                            <div class="swiper-pagination"></div>
+        
+                        </div> <!-- end swiper-container -->
+        
+                    </div> <!-- end column -->
+                </div> <!-- end s-testimonials__content -->
+
+            </section> <!-- end testimonials -->
+
+        </section>  <!-- end content -->
+
+
+        <!-- # site-footer
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row section-header" data-num="04">
+                <h3 class="column lg-12 section-header__pretitle text-pretitle">Get In Touch</h3>
+                <div class="column lg-6 stack-on-1100 section-header__primary">
+                    <h2 class="title text-display-1">
+                    Have an idea or an epic project in mind? Talk to us. 
+                    Let's work together and make something great. 
+                    Drop us a line at <a href="mailto:vteksorg@gmail.com" title="">vteksorg@gmail.com</a>
+                    </h2>
+                </div>    
+                <div class="column lg-6 stack-on-1100 section-header__secondary">
+                    
+                    <div class="contact-block">
+                        <h6>Where To Find Us</h6>
+                        <p>
+                        At Vteks, we operate exclusively online. This allows us to keep our overhead costs low and offer competitive prices to our customers.
+                        </p>
+                    </div>
+
+                    <div class="contact-block">
+                        <h6>Contact Infos</h6>
+                        <ul class="contact-list">
+                            <li><a href="https://wa.me/message/H5NNVYWL6NWVK1">+234 91 512 63 908</a></li>
+                            <li><a href="tel:+234 9151263908">+234 91 512 63 908</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row list-block block-lg-one-half block-tab-whole block-stack-on-1000 s-footer__btns">
+                <div class="column list-block__item">
+                    <div class="s-footer__contact-btn">
+                        <a href="https://wa.me/message/H5NNVYWL6NWVK1" class="btn btn--primary u-fullwidth">
+                            Let's Talk 
+                        </a>
+                    </div>
+                </div>
+                <div class="column list-block__item">
+                    <div class="subscribe-form s-footer__subscribe">
+                        <h6>Subscribe</h6>
+                        <form id="mc-form" class="mc-form">
+                            <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+                            <input type="submit" name="subscribe" value="Subscribe" class="btn btn--primary u-fullwidth">
+                            <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
+                            <div class="mc-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- end s-footer__btns -->
+
+            <div class="row s-footer__bottom">
+
+                <div class="column lg-6 tab-12 s-footer__bottom-left">
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="https://www.facebook.com/vteks.org.company.site">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/junioritech619?igsh=YzljYTk1ODg3Zg==">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/message/H5NNVYWL6NWVK1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>
+                                <span class="u-screen-reader-text">Whatsapp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/vteksorg?t=5xnJW3-o-StlDR6bRQ2gaA&s=09">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                                <span class="u-screen-reader-text">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column lg-6 tab-12 s-footer__bottom-right">
+                    <div class="ss-copyright">
+                        <span>© Copyright Vteks 2024</span> 
+                        <span>Designed by <a href="https://vteks-site.vercel.app/">vteks.org</a>
+                    </div>
+                </div>
+
+            </div> <!-- s-footer__bottom -->
+    
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+    
+        </footer> <!-- end footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
